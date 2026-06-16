@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Laravel
+/vendor
+/node_modules
+/storage/logs
+.env
+
+# general
+*.log
