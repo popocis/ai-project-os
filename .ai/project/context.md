@@ -12,10 +12,13 @@ Define which domains are active in this project:
 
 Example:
 
-Active Profiles:
-- laravel
-- seo
-- ui-ux
+# Context Mode
+
+This project uses ACTIVE ROLE SYSTEM.
+
+The source of truth is:
+
+.ai/project/active-role.md
 
 ---
 
