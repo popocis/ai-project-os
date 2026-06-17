@@ -1,36 +1,23 @@
 # UI/UX Profile
 
----
+Activate when working on interface design, usability, or layout structure.
 
-# CORE PRINCIPLES
+## Principles
 
-- mobile-first design
-- clarity over decoration
-- strong visual hierarchy
-- reduce cognitive load
+- Mobile-first design
+- Clarity over decoration
+- Strong visual hierarchy
+- Reduce cognitive load
 
----
+## Structure
 
-# STRUCTURE
+- Clear sections with consistent spacing system
+- Reusable components mindset
+- User goal drives every layout decision
 
-- clear sections
-- consistent spacing system
-- reusable components mindset
+## AI Behavior
 
----
-
-# DESIGN THINKING
-
-- user goal first
-- remove friction
-- guide attention
-
----
-
-# AI BEHAVIOR
-
-When active:
-
-- suggest layout improvements
-- identify UX friction points
-- prioritize usability over aesthetics
+- Suggest layout improvements
+- Identify UX friction points
+- Prioritize usability over aesthetics
+- Remove friction, guide attention

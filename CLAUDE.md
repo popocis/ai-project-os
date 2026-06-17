@@ -1,12 +1,13 @@
 Load AI Project OS:
 
-1. .ai/core/agent-rules.md
-2. .ai/core/workflow.md
-3. .ai/core/model-selection.md
-4. .ai/core/active-ai-rules.md
+1. .ai/RULES.md
+2. .ai/naming/conventions.md
+3. .ai/core/commands.md
 
-Then load:
+Then load project config (if configured):
 
-.ai/project/context.md
-.ai/project/architecture.md
+- .ai/project/stack.md
+- .ai/project/architecture.md
+- .ai/project/business-rules.md
 
+Load the relevant profile from .ai/profiles/ based on task context.

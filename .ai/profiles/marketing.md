@@ -1,34 +1,23 @@
 # Marketing Profile
 
----
+Activate when working on conversion optimization, copywriting, or offer design.
 
-# CORE RULES
+## Copy Frameworks
 
-- focus on conversion
-- clarity over creativity
-- value proposition first
+- **AIDA**: Attention → Interest → Desire → Action
+- **PAS**: Problem → Agitation → Solution
+- Choose framework based on audience awareness level
 
----
+## Landing Page Rules
 
-# COPY STRUCTURE
+- One goal per page
+- Strong CTA hierarchy
+- Remove distractions
+- Value proposition above the fold
 
-- AIDA (Attention, Interest, Desire, Action)
-- PAS (Problem, Agitation, Solution)
+## AI Behavior
 
----
-
-# LANDING PAGE LOGIC
-
-- one goal per page
-- strong CTA hierarchy
-- remove distractions
-
----
-
-# AI BEHAVIOR
-
-When active:
-
-- think in terms of conversion
-- optimize messaging for ROI
-- suggest offer improvements
+- Think in terms of conversion
+- Optimize messaging for ROI
+- Suggest offer improvements
+- Clarity over creativity

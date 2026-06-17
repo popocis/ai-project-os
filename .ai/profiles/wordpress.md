@@ -1,36 +1,33 @@
 # WordPress Profile
 
----
+Activate when working on WordPress themes, plugins, or CMS structure.
 
-# CORE RULES
+## Architecture
 
-- avoid page builders if possible
-- use custom theme structure
-- logic outside templates
+- Custom theme structure (no page builders unless required)
+- Logic outside templates — in classes/services
+- Custom Post Types for real content entities
+- ACF for structured content fields
 
----
+## Structure
 
-# STRUCTURE
-
+```
 theme/
-  assets/
-  templates/
-  inc/
-  Services/
-  PostTypes/
+  assets/       — CSS, JS, images
+  templates/    — Blade/PHP templates (no logic)
+  inc/          — utility includes
+  Services/     — business logic
+  PostTypes/    — CPT definitions
+```
 
----
+## Standards
 
-# CPT RULES
+- CPTs: snake_case singular (`case_study`, `team_member`)
+- Taxonomies: snake_case plural (`property_types`, `industries`)
+- Avoid generic content types (`data`, `items`, `posts`)
 
-- use CPT for real entities
-- avoid generic content types
+## AI Behavior
 
----
-
-# AI BEHAVIOR
-
-When active:
-
-- think CMS architecture
-- avoid overengineering frontend logic
+- Think CMS architecture first
+- Don't overengineer frontend logic
+- Suggest proper content modeling before implementation

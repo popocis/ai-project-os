@@ -1,52 +1,36 @@
 # Laravel Profile
 
-This profile defines how AI must behave when working on Laravel projects.
+Activate when working on PHP/Laravel backend code.
 
----
+## Architecture
 
-# CORE RULES
+- Service layer architecture with thin controllers
+- Business logic in Actions (single responsibility) or Services
+- Form Requests for validation
+- Eloquent ORM for persistence
+- No logic in Blade templates
 
-- Use service layer architecture
-- Keep controllers thin (orchestration only)
-- Business logic MUST go into Actions or Services
-- Use Form Requests for validation
-- Prefer explicit code over magic
+## Structure
 
----
-
-# STRUCTURE RULE
-
+```
 app/
-  Http/
-    Controllers/
-    Requests/
-  Models/
-  Services/
-  Actions/
+  Http/Controllers/   — orchestration only
+  Http/Requests/      — validation
+  Models/             — entities, relationships only
+  Services/           — business logic
+  Actions/            — single-responsibility operations
+```
 
----
+## Standards
 
-# CODING STYLE
+- PHP 8.2+ with strict typing
+- Pest or PHPUnit for testing
+- Bug fix → write failing test first (when possible)
+- Prefer explicit code over Laravel magic
 
-- PHP 8.2+
-- strict typing where possible
-- Eloquent for ORM
-- no logic in Blade templates
+## AI Behavior
 
----
-
-# TESTING
-
-- Use Pest or PHPUnit
-- Every feature should be testable
-- Fix bug → write failing test first (when possible)
-
----
-
-# AI BEHAVIOR
-
-When this profile is active:
-
-- prioritize backend correctness
-- ask for missing DB or API constraints
-- avoid UI assumptions
+- Prioritize backend correctness
+- Ask for missing DB or API constraints
+- Don't make UI assumptions
+- Suggest tests for new features

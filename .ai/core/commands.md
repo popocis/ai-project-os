@@ -1,75 +1,53 @@
 # AI Command Layer
 
-This file defines the standard commands used to control the AI system.
-
-Commands are interpreted manually or via tooling.
+Commands are hints you can give the AI to switch context. They work with any LLM tool.
 
 ---
 
-# ROLE COMMANDS
+## Profile Commands
 
-/role laravel
-/role seo
-/role ui-ux
-/role marketing
-/role wordpress
+Tell the AI which domain profile to activate:
 
----
+- `[role: laravel]` — backend architecture, API, database, testing
+- `[role: wordpress]` — CMS structure, themes, custom post types
+- `[role: seo]` — content structure, search optimization, entities
+- `[role: marketing]` — conversion, copywriting, offer design
+- `[role: ui-ux]` — interface design, usability, layout
 
-# RULE: ROLE SWITCHING
+**Multi-role** (max 2, first = primary):
+- `[role: laravel + seo]`
 
-When a /role command is executed:
-
-1. Update .ai/project/active-role.md
-2. Replace ACTIVE ROLE value
-3. Reset multi-role state unless explicitly specified
+If no role is specified, the AI infers the profile from task context.
 
 ---
 
-# MULTI-ROLE COMMAND
+## Task Commands
 
-/role laravel + seo
+Tell the AI the type of work:
 
-Rules:
-- first role = primary
-- second role = support
-- max 2 roles allowed
+- `[task: bugfix]` — reproduce → failing test → fix → verify
+- `[task: feature]` — define acceptance criteria → implement → validate → test
+- `[task: refactor]` — identify scope → restructure → verify no regressions
+- `[task: landing-page]` — UX structure → content → implementation
+- `[task: seo-content]` — intent analysis → structure → content → optimization
 
----
-
-# TASK COMMANDS
-
-/task bugfix
-/task feature
-/task refactor
-/task landing-page
-/task seo-article
-
-Each task automatically implies:
-
-- read context.md
-- read architecture.md
-- read active-role.md
-- apply workflow rules
+Every task automatically requires:
+1. Read project context (`.ai/project/`)
+2. Apply the relevant profile (`.ai/profiles/`)
+3. Follow the workflow defined in `.ai/RULES.md`
 
 ---
 
-# BEHAVIOR RULE
+## Usage
 
-Every task must follow:
+These commands can be used naturally in conversation with any AI tool:
 
-1. Understand intent
-2. Validate active role
-3. Apply profile behavior
-4. Execute using workflow.md
-5. Verify result
+```
+[role: laravel] [task: bugfix] The checkout total is wrong when applying a discount code.
+```
 
----
+```
+[role: seo + marketing] [task: landing-page] Create the pricing page for our SaaS product.
+```
 
-# FALLBACK RULE
-
-If command is invalid:
-
-- ignore command
-- keep previous state unchanged
-- default behavior remains active-role.md
+Or simply describe the task — the AI will infer the profile automatically.

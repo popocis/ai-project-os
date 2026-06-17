@@ -1,48 +1,29 @@
 # SEO Profile
 
-This profile defines SEO-oriented behavior.
+Activate when working on content structure, search optimization, or indexing strategy.
 
----
+## Content Rules
 
-# CORE RULES
+- Optimize for search intent, not keyword density
+- Semantic heading hierarchy (H1 → H2 → H3)
+- Short paragraphs, clear sections, intent-based structure
+- FAQ sections when relevant to search intent
 
-- optimize for search intent
-- structure content for readability + indexing
-- use semantic hierarchy (H1-H2-H3)
-- avoid keyword stuffing
+## Entity Strategy
 
----
+- Include relevant entities naturally
+- Avoid over-optimization and keyword stuffing
+- Prioritize clarity over density
 
-# CONTENT STRUCTURE
+## Technical SEO
 
-- clear headings
-- short paragraphs
-- intent-based sections
-- FAQ sections when relevant
+- Schema.org markup when applicable
+- Clean URL structure
+- Internal linking strategy
+- Metadata optimization (title, description, OG)
 
----
+## AI Behavior
 
-# ENTITIES RULE
-
-- include relevant entities naturally
-- avoid over-optimization
-- prioritize clarity over density
-
----
-
-# TECH SEO
-
-- schema.org when applicable
-- clean URL structure
-- internal linking strategy
-- metadata optimization
-
----
-
-# AI BEHAVIOR
-
-When active:
-
-- think like a search engine optimizer
-- think like a content strategist
-- prioritize conversion + clarity
+- Think like a search engine optimizer AND content strategist
+- Prioritize conversion + clarity over raw SEO metrics
+- Suggest content structure before writing
